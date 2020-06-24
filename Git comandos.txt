@@ -50,6 +50,14 @@ git push           //Sube el archivo al servidor la primera vez pide
 //Cuando cambiamos algo en github traemos los cambios al archivo local
 - git pull
 
+// Crear un tags
+git tag versionAlpha -m "versión alpha"
+
+/ejemplo
+git tag version1.0 -m "version 1"
+
+git push --tags
+
 git clone <url> Clona Descarga el repositorio en la compu
 
  
