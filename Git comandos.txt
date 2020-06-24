@@ -1,0 +1,55 @@
+https://bluuweb.github.io/tutorial-github/guia/fundamentos.html
+--------------------------------------------------------------------
+Escribir en terminal o power shell 
+//Por ahora de preferencia power shell
+// Conocer la versión de git instalada
+- git version
+
+// Iniciar un nuevo repositorio solo la 1era vez
+// Crear la carpeta oculta .git
+
+- git init             // En visual studio se cambia el color de los archivos
+ 
+"U" en verde - no tiene seguimiento el archivo
+
+// Ver que archivos no han sido registrados
+- git status -s
+
+//Lo agregas al temporal "Si lo haces bien cambia de una 'U' a 'A' "
+- git add <Nombre> 
+/Enviar todo 
+- git add .
+
+*Ejemplo
+git add index.html
+
+//Posible error si no ponemos nuestro correo
+//Configurar correo
+- git config --global user.email "beyonderbackup@hotmail.com"
+
+//Mandamos al repositorio y desaparece el color en el archivo
+- git commit -m "Mensaje" //Diferenciar y referenciar lo que hicimos
+
+*Ejemplo
+- git commit -m "agregamos el index.html"
+
+git add .
+git commit -m "Modificamos algo"
+git push           //Sube el archivo al servidor la primera vez pide 
+                     identificacion de cuenta de github
+
+// Muestra en una línea los commit realizados
+- git log --oneline
+
+//Regresar en el tiempo hasta donde guardamos con el commit
+- git reset --hard <id del punto de guardado>
+
+/Ejemplo
+- git reset --hard f204e0f
+
+//Cuando cambiamos algo en github traemos los cambios al archivo local
+- git pull
+
+git clone <url> Clona Descarga el repositorio en la compu
+
+ 
