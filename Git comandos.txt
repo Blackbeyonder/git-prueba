@@ -51,12 +51,22 @@ git push           //Sube el archivo al servidor la primera vez pide
 - git pull
 
 // Crear un tags
-git tag versionAlpha -m "versión alpha"
+- git tag versionAlpha -m "versión alpha"
 
 /ejemplo
-git tag version1.0 -m "version 1"
+- git tag version1.0 -m "version 1"
 
-git push --tags
+//Subir los tags
+- git push --tags
+
+// Nos muestra en que rama estamos
+- git branch
+
+// Crea una nueva rama
+- git branch nombreRama
+
+// Nos movemos a la nueva rama
+- git checkout nombreRama
 
 git clone <url> Clona Descarga el repositorio en la compu
 
